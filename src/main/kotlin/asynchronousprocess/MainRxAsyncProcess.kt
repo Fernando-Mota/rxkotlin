@@ -17,8 +17,6 @@ fun main(args: Array<String>) {
 
     var descriptions = arrayListOf<String>("Descricao 11", "Descricao 22", "Descricao 33", "Descricao 44", "Descricao 55")
 
-    var scheduler = Schedulers.from { runnable -> runnable.run() }
-
     var scheduler2 = BlockingScheduler()
 
     scheduler2.execute {
